@@ -1,0 +1,53 @@
+<!-- Build your First Form, students can deside on the theme.
+
+Challenge 1: Use the text input to get the user name 
+Challenge 2: Use lable in appropriate places
+Challenge 3: use different form input elements
+Challenge 4: When the form is submitted, get the user's response and add the same to the body of the mail with your email id in the "to" section.
+-->
+
+<!-- your code goes below this comment -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>FORM</h1>
+
+
+<form action="mailto:your_email@example.com" method="post" enctype="text/plain">
+    <label for="name"> Name:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"><br><br>
+    
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select><br><br>
+    
+    <label>Favorite Color:</label><br>
+    <input type="radio" id="color-black" name="favoriteColor" value="black">
+    <label for="color-red">Black</label><br>
+    <input type="radio" id="color-blue" name="favoriteColor" value="blue">
+    <label for="color-blue">Blue</label><br>
+    <input type="radio" id="color-white" name="favoriteColor" value="white">
+    <label for="color-white">White</label><br><br>
+    
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
